@@ -1,15 +1,14 @@
 function check(){
-	$(function(){
 	var number = parseInt(document.table.inputBox.value);
 	var range = parseInt(document.table.length.value);
-	var array = [number];
-    var multiplier = 1
+	var array = [];
+    var multiplier = 1;
 
 if ( range > 500 ) {
 	alert('Whoa calm down bro')
 }
 if ( range ){}
-	else var range = 15
+	else var range = 15;
 
 	grow();
 
@@ -36,5 +35,5 @@ else {console.log('range was bigger')}
 }
 console.log(array.shift);
 document.getElementById("answer").innerHTML = array;
-})};
+};
 
