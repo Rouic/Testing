@@ -1,8 +1,8 @@
 $(document).ready(function(){
 function check(){
 
-	var theinput = [(document.inputs.inputBox.value)];
+	var theinput = document.inputs.inputBox.value;
 
-	document.getElementById("thewords").innerHTML = theinput;
+	document.getElementByName('thewords').InnerHTML = theinput;
 }
 });
