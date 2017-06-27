@@ -45,7 +45,7 @@ $(document).ready(function(){
 		var counting = {}; //Lets then define our short term storage which we'll use an object for. 
 		
 		for(var i = 0; i < array.length; i++){ //right, so for each word in our array lets do something
-			if(counting[array[i]]){ //now heres where things might look a bit confusing. We ask, IF counting (an object has an element named (our current word in our for loop) then...
+			if(counting[array[i]]){ //now heres where things might look a bit confusing. We ask, IF counting han object has an element named (our current word in our for loop) then...
 				counting[array[i]]++; //add 1 to it
 			} else { //otherwise if our object does not have the word stored;
 				counting[array[i]] = 1; //make the word equal one. 
