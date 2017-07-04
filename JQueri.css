@@ -4,19 +4,24 @@ body {
     background-attachment: fixed;
 	font-family: Helvetica, Arial, Comic-sans;
 }
+ul.a {
+	list-style:none;
+    padding-left:0;
+}
 
 #container {
-	background-color: #560A9C;
+	background-color: #3498DB;
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 #content{
 padding: 15px;
 }
 
 #header {
-	background-color: #1319AB;
+	background-color: #2471A3;
 	color: white;
 	text-align: center;
 }
@@ -28,10 +33,11 @@ padding: 15px;
 }
 
 #nav{
-	background-color: #EE00A9;
+	background-color: #58D68D;
+	color: blue;
 	width: 200px;
 	padding-right: 30px;
-	padding-left: 15px;
+	padding-left: 18px;
 	float: left;
 }
 
@@ -41,6 +47,9 @@ padding: 15px;
 	padding: 15px;
 	color: white;
 }
+#firstbutton {
+	background-color: gold;
+}
 #buttona {
 	width: 180px;
 	padding-right: 30px;
@@ -49,5 +58,16 @@ padding: 15px;
 h1, h3 {
 	color: white;
 }
-#firstbutton {
+h4.b {
+	color: black;
+}
+
+a:link {
+    color: blue;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: white;
 }
