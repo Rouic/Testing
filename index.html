@@ -13,15 +13,20 @@
 </audio>
 
 <body>
+
 <div id='container'>
+
 <div id='header'>
-<h1>Durr dur di, dur dur durrrrrr</h1>
+<h1>Experiment Page</h1>
+<img id='memes2' src="spoodermin.gif" align="left">
 </div>
+
 <div id='buttona'>
-<button id='firstbutton' type='submit' class='btn-md btn-default' role='button' onclick='unmeme(), rotate()'>Unmeme</button>
+<button class="firstbutton">Unmeme</button>
 </div>
+
 <div id='content'>
-<img id='memes1' src="spoodermin.gif">
+<img id='memes1' src="rick.gif" width="100" height="100" align="center">
 	<div id='nav'>
 	<h4 class="b">Experimentals</h4>
 	<ul class="a">
@@ -44,19 +49,18 @@
 	<li><a href="error.html">Update 3 </a></li>
 	</ul>
 	<br>
-	<img id='memes2' src="spoodermin.gif">
+	<img id='memes4' src="dancing1.gif" width="150">
 	</ul>
 	</div>
 <div id = "main">
 <h2>Content</h2>
-<p>A meme is an idea, behavior, or style that spreads from person to person within a culture. 
-<p>A meme acts as a unit for carrying cultural ideas, symbols, or practices that can be<br> transmitted from one mind to another through writing, speech, gestures, rituals, or other imitable phenomena with a mimicked theme. 
-<img id='memes3' src="dancing2.gif">
-<p>Supporters of the concept regard memes as cultural analogues to genes in that they<br> self-replicate, mutate, and respond to selective pressures.
+	<p>A meme is an idea, behavior, or style that spreads from person to person within a culture. 
+	<p>A meme acts as a unit for carrying cultural ideas, symbols, or practices that can be<br> transmitted from one mind to another through writing, speech, gestures, rituals, or other imitable phenomena with a mimicked theme. 
+	<p>Supporters of the concept regard memes as cultural analogues to genes in that they<br> self-replicate, mutate, and respond to selective pressures.
 <br>
+<img id='memes3' src="dancing2.gif" width="100" height="100">
 <br>
 <img id="image" src="scrn1.png">
-<img id='memes4' src="dancing1.gif">
 <br>
 <br>
 </div>
@@ -64,39 +68,51 @@
 <br>
 
 <script>
-	var tune = document.getElementById("tune");
+
+	var tune = document.getElementById("tune");//Music and variables
+	tune.volume = 0.6;
 	var images = ["scrn1.png","scrn2.png","scrn3.png","scrn4.png"];
 	var image=document.getElementById("image");
 
-function unmeme() {//pause music & get rid of memes function (broken, never recieves finished log)
-console.log('starting unmeme');
-	return tune.pause();
+$(document).ready(function(){//Hide and show after time
+		$("#memes5").hide();
+		$("#memes4").hide();
+		$("#memes3").hide();
+		$("#memes2").hide();
+		setTimeout(function(){
+	$("#memes2, #memes3, #memes4, #memes5").show()},23000);
 
-	$(function() {//This function doesn't seem to run. Supposedly why it doesnt return the finished log
-		$('#memes').fadeOut(1000);
-})
-console.log('finished unmeme')}
+
+    $(".firstbutton").click(function(){//unmeme
+    	tune.pause();
+        $("#memes3").hide(2000);
+        $("#memes1").delay(1000).hide(1000);
+        $("#memes2").delay(400).hide(800);
+        $("#memes4").delay(1400).hide(2000);
+        $("#memes5").delay(2000).hide(2500);
+    });
 
 function rotate() {//Broken, meant to rotate the image source
-	console.log('doing rotate')
+	console.log('doing rotate');
 	var aThing=0;
 	aThing+1;
     if(aThing>5){
-    	console.log(aThing)
+    	console.log(aThing);
     	image.src = images[aThing];
-    setTimeout(rotate(), 5000)
+    	setTimeout(rotate(), 5000);
 }
     else{
-    	console.log("rotate error")
-    }
-}
+    	console.log("rotate error");
+}}});
 </script>
 
 
 
 </br>
 <div id = 'footer'>
+<br>
+<img id="memes5" src="dancing5.gif" width="90" height="90">
 Copyright &copy; Nick DankEngine Roberts.
-
+</div>
 </body>
 </html>

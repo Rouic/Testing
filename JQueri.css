@@ -24,6 +24,7 @@ padding: 15px;
 	background-color: #2471A3;
 	color: white;
 	text-align: center;
+	height: 50px;
 }
 
 #main {
@@ -49,11 +50,13 @@ padding: 15px;
 }
 #firstbutton {
 	background-color: gold;
+	padding-top: 10px;
 }
 #buttona {
 	width: 180px;
 	padding-right: 30px;
 	padding-left: 15px;
+	padding-top: 15px;
 }
 h1, h3 {
 	color: white;
