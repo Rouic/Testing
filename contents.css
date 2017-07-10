@@ -1,0 +1,11 @@
+body {
+	background-color: #EE00A9;
+	font-family: Helvetica, Arial, Comic-sans;
+}
+
+#container1 {
+	color:black;
+	text-align: center;
+	width:500px;
+	height:120px;
+}
