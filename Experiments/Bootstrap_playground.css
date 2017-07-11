@@ -1,0 +1,24 @@
+.container {
+position:relative;
+}
+
+.ExpTextBox {
+	float:center;
+	background-color:#808282;
+	color:white;
+	position:relative;
+	padding:15px;
+	width:90%;
+}
+
+.hidden-lg {
+	float:center;
+	position:relative;
+}
+
+.btn-default, .btn-default:active {
+    background-color: #EEB400
+}
+.btn-default:hover, .btn-default:visited {
+	background-color: #F05230
+}
