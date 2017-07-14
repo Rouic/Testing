@@ -1,14 +1,17 @@
 .container {
-position:relative;
+	display:block;
+	background-color:#808282;
+	color:white;
+	position:relative;
+	padding:30px;
+	width:90%;
 }
 
 .ExpTextBox {
 	float:center;
-	background-color:#808282;
-	color:white;
 	position:relative;
-	padding:15px;
 	width:90%;
+	height:90%;
 }
 
 .hidden-lg {
@@ -21,4 +24,22 @@ position:relative;
 }
 .btn-default:hover, .btn-default:visited {
 	background-color: #F05230
+}
+.icons {/*keeps sticking to right of screen ajacent to buttons*/
+	display: block;
+	float:left;
+	position:relative;
+}
+
+.container2 {/*Is not in line with first conatiner despite having same settings*/
+	display: block;
+	background-color:#808282;
+	position:relative;
+	float:center;
+	padding:30px;
+	width:90%;
+}
+
+.well well-sm, .well well-lg {
+	color:black;
 }
