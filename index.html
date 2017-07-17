@@ -4,6 +4,7 @@
 		<title>Contents</title>
 	<script src = "jquery.min.js"></script>
 	<script src = "contents.js"></script>
+	<script src = "bootstrap.min.js"></script>
 </head>
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" href="contents.css">
@@ -13,58 +14,38 @@
 <div id = 'ctr1'>
 <p>This is a pragraph</p>
 </div>
-<div id="aCarousel" class="carousel slide" data-ride="aCarousel">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
 
-	<ol class="carousel-indicators">
-		<li data-target="#aCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#aCarousel" data-slide-to="1"></li>
-		<li data-target="#aCarousel" data-slide-to="2"></li>
-	</ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/scrn2.png" alt="Los Angeles">
+    </div>
 
-	<div class="carousel-inner">
-	<div class="item active">
-	<div class="slide1"></div>
-	<img src="images/scrn1.png" alt="">
-	<div class="carousel-caption">
+    <div class="item">
+      <img src="images/scrn1.png" alt="Chicago">
+    </div>
 
-	</div> 
-	</div>
+    <div class="item">
+      <img src="images/scrn3.png" alt="New York">
+    </div>
+  </div>
 
-	<div class="item">
-	<div class="slide2"></div>
-	<img src="images/scrn2.png" alt="inf.png">
-	<div class="carousel-caption">
-		<h1>Should be able to see this</h1>
-		<p>And this</p>
-	</div>
-	</div>
-
-	<div class="item">
-	<div class="slide3"></div>
-	<img src="images/scrn3.png" alt="inf.png">
-	<div class="carousel-caption">
-
-	</div>
-	</div>
-
-	<div class="item">
-	<div class="slide4"></div>
-	<img src="images/scrn4.png" alt="nope">
-	<div class="carousel-caption">
-
-	</div>
-	</div>
-
-</div>
-
-	<a class="left carousel-control" hre="#aCarousel" data-slide="prev">
-	<span class="glyphicon glyphicon-chevron-left"></span>
-
-	<a class="right carousel-control" hre="#aCarousel" data-slide="next">
-	<span class="glyphicon glyphicon-chevron-right"></span>
-
-</a></a>
-</div>
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
 <div id="the90sMenu">
