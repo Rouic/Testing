@@ -1,0 +1,12 @@
+body {
+	background-image: url('doge.jpg');
+	background-position: right top;
+    background-attachment: fixed;
+	font-family: Helvetica, Arial, Comic-sans;
+}
+
+#page-header {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
