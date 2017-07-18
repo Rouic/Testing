@@ -1,14 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Look at mee</title>
-	<script src = "Experiments.js"></script>
+	<title>I'm a tab look at me!</title>
 </head>
-<body>
-<h1>Experiments</h1>
-<br>
-<a href="Bootstrap_playground.html">Bootstrap Playground</a><p>
 
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Bootstrap Tutorial</title>
+<script src="../jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="Bootstrap_playground.css">
+
+<body>
+	<div class='page-header'>
+		<h1>Bootstrap Experimental</h1>
+	</div>
+
+<div class='container'>
+
+	<div class="col-lg-9 col-md-10 col-sm-11 col-xs-12">
+		<div class='ExpTextBox'>
+			<p> ExpTextBox text area</p>
+			<a href='#' class='btn btn-default btn-md' role='button'>More info</a>
+			<button type='submit' class='btn btn-md btn-primary' role='button'>Primary</button>
+			<button type='submit' class='btn btn-xs btn-success' role='button'>Success</button>
+			<button type='submit' class='btn btn-sm btn-info' role='button'>Info</button>
+			<button type='submit' class='btn btn-lg btn-warning' role='button'>Warning</button>
+			<button type='submit' class='btn btn-md btn-lg btn-link' role='button'>Link</button>
+
+			<div class="btn btn-group" role='group'>
+				<button type='group' class='btn btn-sm btn-info'>Info</button>
+				<button type='group' class='btn btn-sm btn-info'>Info</button>
+				<button type='group' class='btn btn-sm btn-info'>Info</button>
+			</div>
+			<p>Buttons wrap when window size is smaller</p>
+		</div>
+	</div>
+
+	<div class="hidden-lg">
+		<button type='submit' class='btn btn-lg btn-lg btn-default' role='button'>Hidden Unless Small</button>
+	</div>
+
+
+	<div class='buttons'>
+		<span class="glyphicon glyphicon-time"></span>
+		<span class="glyphicon glyphicon-inbox"></span>
+		<span class="glyphicon glyphicon-volume-off"></span>
+		<span class="glyphicon glyphicon-text-size"></span>
+		<span class="glyphicon glyphicon-ice-lolly-tasted"></span>
+		<span class="glyphicon glyphicon-credit-card"></span>
+	</div>
+</div>
+<div class='container2'><!--Created as everything was going alongside eachother rather than underneath, still isn't behaving correctly in css despite havig same settings as first container-->
+	<p>
+		Randomness is the lack of pattern or predictability in events.[1] A random sequence of events, symbols or steps has no order and does not follow an intelligible pattern or combination. Individual random events are by definition unpredictable, but in many cases the frequency of different outcomes over a large number of events (or "trials") is predictable. For example, when throwing two dice, the outcome of any particular roll is unpredictable, but a sum of 7 will occur twice as often as 4. In this view, randomness is a measure of uncertainty of an outcome, rather than haphazardness, and applies to concepts of chance, probability, and information entropy.
+	</p>
+	<div class="well well-sm">
+		Randomness is the lack of pattern or predictability in events.[1] A random sequence of events, symbols or steps has no order and does not follow an intelligible pattern or combination. Individual random events are by definition unpredictable, but in many cases the frequency of different outcomes over a large number of events (or "trials") is predictable. For example, when throwing two dice, the outcome of any particular roll is unpredictable, but a sum of 7 will occur twice as often as 4. In this view, randomness is a measure of uncertainty of an outcome, rather than haphazardness, and applies to concepts of chance, probability, and information entropy.
+	</div>
+	<div class="well well-lg">
+		Randomness is the lack of pattern or predictability in events.[1] A random sequence of events, symbols or steps has no order and does not follow an intelligible pattern or combination. Individual random events are by definition unpredictable, but in many cases the frequency of different outcomes over a large number of events (or "trials") is predictable. For example, when throwing two dice, the outcome of any particular roll is unpredictable, but a sum of 7 will occur twice as often as 4. In this view, randomness is a measure of uncertainty of an outcome, rather than haphazardness, and applies to concepts of chance, probability, and information entropy.
+	</div>
+<span class="text-muted">A quick format of text</span>
+<span class="text-primary">A quick format of text</span>
+<span class="bg-success">A quick format of text</span>
+
+	<div class="dropdown">
+		<button class="btn btn-info dropdown-toggle btn-md" type="button" id="dropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Dropdown
+
+		<span class="caret"></span>
+		</button>
+
+		<ul class="dropdown-menu" role="menu">
+		<li class="dropdown-header">Dropup</li>
+		<li><a href="#">Link 1</a></li>
+		<li><a href="#">Link 2</a></li>
+		<li><a href="#">Link 3</a></li>
+
+		<li role="seperator" class="divider"></li>
+		<li class="dropdown-header">Dropleft</li>
+
+		<li><a href="#">Link 4</a></li>
+		<li><a href="#">Link 5</a></li>
+		</ul>
+	</div>
+</div>
 </body>
+
+<!-- Bootstrap Notes
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+Buttons
+.btn
+.btn-default
+.btn-primary
+.btn-success
+.btn-info
+.btn-warning
+.btn-danger
+.btn-link
+
+.btn-lg
+.btn-md
+.btn-sm
+.btn-xs
+
+.btn-block
+
+.active
+.disabled
+
+Bootstrap uses a 12 column system to wrap webiste with different window sizes
+e.g col-lg-3  col-md-3 col-sm-6 col-xs-12
+
+'well' adds rounded borders and backgrounds
+
+-->
 
 </html>
