@@ -52,9 +52,12 @@
             background-color: #555658;
         }
         
-        footer.page-footer {
-            background-color: #555658;
-            margin-top: 2rem;
+        .frame {
+            display: block;
+            margin: auto;
+            border: 2px solid grey;
+            height: 900px; 
+            width: 85%;
         }
     </style>
 
@@ -75,10 +78,10 @@
                 </a>
                 <div class="collapse navbar-collapse" id="navbarNav1">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li>
                        <a class="nav-link" href="index.html">Home</a>
                         </li>
-                        <li>
+                        <li class="nav-item active">
                             <a class="nav-link" href="word_thing.html">Word Thing</a>
                         </li>
                         <li>
@@ -93,9 +96,10 @@
                         <li class="nav-item dropdown btn-group">
                             <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Updates</a>
                             <div class="dropdown-menu dropdown" aria-labelledby="dropdownMenu1">
-                                <a class="dropdown-item" always forgethref="old/update_2">Updwate 2</a>
-                                <a class="dropdown-item" href="old/update 3word_thing.html">Update 3</a>
-                                <a class="dropdown-item" href="word_thing.html">Update 4</a>
+                                <a class="dropdown-item" href="old/Update_2/index.html">Update 2</a>
+                                <a class="dropdown-item" href="old/Update_3/index.html">Update 3</a>
+                                <a class="dropdown-item" href="old/Update_4/index.html">Update 4</a>
+                                <a class="dropdown-item" href="index.html">Update 5</a>
                             </div>
                         </li>
                     </ul>
@@ -106,7 +110,7 @@
     </header>
 
     <main>
-        <iframe src="pages/Word_Thing/index.html" height="900px" width="90%"></iframe>
+        <iframe class="frame" src="pages/Word_Thing/index.html"></iframe>
     </main>
     <!-- SCRIPTS -->
 
