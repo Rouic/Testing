@@ -540,43 +540,6 @@ input.text:focus {
 	width: 40px;
 }
 
-@media ( min-width: 768px ) {
-	
-	.btn-prepend {
-		padding-left: 60px;
-		padding-left: 2.727rem;
-		text-align: left;
-	}
-	
-	.btn-prepend .prepended {
-		width: 50px;
-	}
-	
-}
-
-@media ( min-width: 1200px ) {
-	.btn-prepend {
-		padding-left: 64px;
-		padding-left: 2.909rem;
-	}
-	
-	.btn-prepend .prepended {
-		width: 60px;
-	}
-
-}
-
-@media ( min-width: 1350px ) {
-	.btn-prepend {
-		padding-left: 72px;
-		padding-left: 3.318rem;
-	}
-	
-	.btn-prepend .prepended {
-		width: 67px;
-	}
-
-}
 
 /* APPENDED TO */
 
