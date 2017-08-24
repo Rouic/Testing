@@ -1,7 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700);
-@import url("normalize.css");
 @import url("grid.css");
-@import url("modal.css");
 
 *,
 *:before,
@@ -1013,7 +1011,6 @@ input.text:focus {
 @media ( min-width: 1200px ) {
 	.hero-home {
 		background-color: #5c6164;
-		background-image: url("../img/frame-1.jpg");
 	}
 
 }
